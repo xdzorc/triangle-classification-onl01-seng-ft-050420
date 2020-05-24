@@ -14,7 +14,7 @@ class Triangle
     if @array.all? {|x| x>0 && (@array.sum -x)>x}
       if @a==@b && @b==@c 
         return :equilateral
-      elsif @array.length -@array.uniq.length !=0
+      elsif @array.length - @array.uniq.length !=0
         return :isosceles
       else
         return :scalene
